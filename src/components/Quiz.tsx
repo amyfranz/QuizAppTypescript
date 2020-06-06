@@ -1,5 +1,6 @@
 import React, { FC, Fragment, useState } from "react";
 import { Question as DisplayQuestion } from "./Question";
+import "./Quiz.css";
 
 interface QuizPageProps {
   handleFinish: HandleFinish;

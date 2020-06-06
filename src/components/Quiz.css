@@ -1,0 +1,15 @@
+h1 {
+  color: #f3c623;
+  text-align: center;
+  font-size: 4rem;
+}
+.quiz h2 {
+  color: rgb(121, 22, 151);
+  margin: 20px 90px 20px 90px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+p {
+  color: rgb(121, 22, 151);
+  font-size: 2rem;
+}

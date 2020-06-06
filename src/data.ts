@@ -1,6 +1,6 @@
 export const data: {
   difficulties: Difficulty[];
-  categories: { id: number; name: string }[];
+  categories: Category[];
 } = {
   categories: [
     { id: 9, name: "General Knowledge" },

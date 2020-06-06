@@ -1,7 +1,8 @@
 import React, { FC, Fragment, useState } from "react";
 import { Welcome } from "./components/Welcome";
 import { Quiz } from "./components/Quiz";
-import { Results } from "./components/result";
+import { Results } from "./components/Result";
+import "./App.css";
 const URL = "https://opentdb.com/api.php?amount=10";
 
 const App: FC = () => {

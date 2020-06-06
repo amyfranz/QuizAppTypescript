@@ -1,0 +1,21 @@
+.result h1 {
+  margin: 10px 0px 0px 0px;
+  padding: 2px;
+  font-size: 15rem;
+  color: #f3c623;
+  text-shadow: 2px 2px #ff0000;
+}
+h2 {
+  color: rgb(121, 22, 151);
+  margin: 20px 90px 20px 90px;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 2px 2px #ff0000;
+}
+h3 {
+  color: rgb(121, 22, 151);
+  margin: 50px 90px 20px 90px;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px #ff0000;
+}

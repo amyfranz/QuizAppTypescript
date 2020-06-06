@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import "./Quiz.css";
 
 interface QuestionPageProps {
   question: Question;
@@ -20,12 +21,14 @@ export const Question: FC<QuestionPageProps> = ({ question, nextQuestion }) => {
       : shuffle([question.correct_answer, ...question.incorrect_answers]);
 
   return (
-    <div>
+    <div className="quiz">
       <h2 dangerouslySetInnerHTML={{ __html: question.question }} />
       {buttonArray.map((button) => (
-        <button onClick={() => nextQuestion(button)} key={button}>
-          {button}
-        </button>
+        <button
+          dangerouslySetInnerHTML={{ __html: button }}
+          onClick={() => nextQuestion(button)}
+          key={button}
+        />
       ))}
     </div>
   );

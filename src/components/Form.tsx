@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { data } from "../data";
 
 interface QuizFormProps {
@@ -17,6 +17,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({ handleSubmit }) => {
         handleSubmit(difficulty, category);
       }}
     >
+      <label>Difficulty:  </label>
       <select
         name="difficulty"
         onChange={(e) => setOptions({ difficulty: e.target.value, category })}
@@ -27,6 +28,8 @@ export const QuizForm: React.FC<QuizFormProps> = ({ handleSubmit }) => {
           </option>
         ))}
       </select>
+      <br />
+      <label>Category:  </label>
       <select
         name="category"
         onChange={(e) => setOptions({ difficulty, category: e.target.value })}
@@ -37,7 +40,8 @@ export const QuizForm: React.FC<QuizFormProps> = ({ handleSubmit }) => {
           </option>
         ))}
       </select>
-      <button>Submit</button>
+      <br />
+      <button type="submit">Let's Go</button>
     </form>
   );
 };

@@ -1,16 +1,16 @@
 import React, { FC } from "react";
-import { data } from "../data";
-import {QuizForm} from "./Form"
+import { QuizForm } from "./Form";
+import "./Welcome.css";
 
 interface WelcomePageProps {
   handleSubmit: HandleSubmit;
 }
 
 export const Welcome: FC<WelcomePageProps> = ({ handleSubmit }) => {
-  console.log(data.categories);
   return (
-    <div>
-      <h1>Welcome to </h1>
+    <div className="WelcomeContainer">
+      <h1>Welcome to the Quiz App</h1>
+      <h2>Pick your quiz:</h2>
       <QuizForm handleSubmit={handleSubmit} />
     </div>
   );
