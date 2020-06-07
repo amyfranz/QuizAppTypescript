@@ -3,9 +3,9 @@ import { Question as DisplayQuestion } from "./Question";
 import "./Quiz.css";
 
 interface QuizPageProps {
-  handleFinish: HandleFinish;
+  handleFinish: Function;
   questions: Array<Question>;
-  increaseScore: IncreaseScore;
+  increaseScore: Function;
 }
 
 export const Quiz: FC<QuizPageProps> = ({

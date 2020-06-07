@@ -19,11 +19,16 @@ const App: FC = () => {
         setPage("quiz");
       });
   };
-  const handleFinish: HandleFinish = () => {
+  const handleFinish: Function = () => {
     setPage("result");
   };
+  const startOver: Function = () => {
+    setPage("welcome");
+    setQuestions([]);
+    setScore(0);
+  };
 
-  const increaseScore = () => {
+  const increaseScore: Function = () => {
     setScore(score + 1);
   };
 
@@ -40,7 +45,7 @@ const App: FC = () => {
         />
       </Fragment>
     );
-  if (page === "result") return <Results score={score} />;
+  if (page === "result") return <Results score={score} startOver={startOver} />;
 
   return <h1>Default</h1>;
 };

@@ -1,6 +1,5 @@
 type HandleSubmit = (difficulty: string, category: string) => void;
-type HandleFinish = () => void;
-type IncreaseScore = () => void;
+type Function = () => void;
 type NextQuestion = (answer: string) => void;
 type Score = number;
 type Question = {
